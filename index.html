@@ -11,13 +11,15 @@
 
 <body>
     <header>
+
         <nav>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="toggle-dark-mode" class="toggle-btn">🌙</button>
         </nav>
     </header>
     <section id="about">
@@ -33,6 +35,15 @@
             efficient
             systems.</p>
 
+        <p style="font-weight: bold;">Connect with me:</p>
+        <div class="social-links">
+            <a href="https://github.com/pragati9998" target="_blank" class="github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pragati-chaudhary-24749b17a/" target="_blank" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
     </section>
 
     <section id="work-experience">
@@ -119,7 +130,75 @@
         </div>
     </section>
 
+    <section id="projects">
+        <h2>Projects</h2>
 
+        <!-- Real-Time Weather Analytics Dashboard -->
+        <div class="project-card">
+            <img src="Weather image.jpg" alt="Real-Time Weather Dashboard" class="project-thumbnail">
+            <div class="project-info">
+                <h3>Real-Time Weather Analytics Dashboard</h3>
+                <p><strong>Summary:</strong> Built an interactive dashboard to visualize live weather data using Apache
+                    Kafka, Spark Streaming, and Dash.</p>
+                <p><strong>Technologies:</strong>
+                    <span class="tech-icon">🛠️ Apache Kafka</span>
+                    <span class="tech-icon">🛠️ Spark Streaming</span>
+                    <span class="tech-icon">🛠️ Dash</span>
+                    <span class="tech-icon">🛠️ Python</span>
+                </p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>Streamed real-time weather data from OpenWeather API via Apache Kafka.</li>
+                    <li>Processed and analyzed data with Apache Spark Streaming.</li>
+                    <li>Visualized live data using Dash for an interactive dashboard.</li>
+                    <li>Managed API security using environment variables.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/pragati9998/Real-Time-Weather-Analytics-Dashboard" target="_blank"
+                        class="github-link">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Scraping Project -->
+        <div class="project-card">
+            <img src="Landing Page.jpg" alt="Web Scraping Project" class="project-thumbnail">
+            <div class="project-info">
+                <h3>Web Scraping Project</h3>
+                <p><strong>Summary:</strong> Developed a web scraping application to extract book titles and prices from
+                    "Books to Scrape."</p>
+                <p><strong>Technologies:</strong>
+                    <span class="tech-icon">🛠️ Python</span>
+                    <span class="tech-icon">🛠️ BeautifulSoup</span>
+                    <span class="tech-icon">🛠️ Requests</span>
+                    <span class="tech-icon">🛠️ CSV</span>
+                </p>
+                <h4>Highlights:</h4>
+                <ul>
+                    <li>Implemented a web scraper to collect book titles and prices.</li>
+                    <li>Stored the extracted data in a structured CSV format.</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/pragati9998/My_scraping_project" target="_blank" class="project-link"><i
+                            class="fab fa-github"></i>View
+                        on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScl2OCDIxhkr56LvLtTAnA_HzeS77DKCgASH57nOAnMKe2dBQ/viewform?embedded=true"
+            width="640" height="678" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
     <footer>
         <p>© 2024 Pragati Chaudhary. All rights reserved.</p>
     </footer>
