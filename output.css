@@ -41,7 +41,6 @@ nav ul li a {
 section {
     padding: 4rem;
     text-align: center;
-    border: 1px solid black;
     max-width: 800px;
     /* Restricts the width for better readability */
     margin: 2rem auto;
@@ -72,4 +71,141 @@ footer {
     section {
         padding: 2rem;
     }
+}
+
+.profile-img {
+    max-width: 50%;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Makes the image circular */
+    margin: 1rem 0;
+    /* Adds spacing around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds a shadow for better aesthetics */
+}
+
+
+
+
+
+
+
+
+
+
+#work-experience {
+    padding: 4rem;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#work-experience h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.experience .job {
+    margin-bottom: 2rem;
+}
+
+.job h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.job .company {
+    margin: 0.5rem 0;
+    font-style: italic;
+    color: #555;
+}
+
+.job .duration {
+    color: #777;
+    margin: 0.5rem 0;
+}
+
+.responsibilities {
+    margin: 1rem 0 0;
+    padding-left: 1.5rem;
+}
+
+.responsibilities li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill ul li {
+    margin: 0.5rem 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.skill ul li i {
+    margin-right: 10px;
+    color: #3b82f6;
+    /* You can customize the icon color */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress {
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
