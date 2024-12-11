@@ -6,6 +6,8 @@ body {
     margin: 0;
     padding: 0;
     color: #0a0a0a;
+
+
 }
 
 /* Dark mode styles */
@@ -109,12 +111,16 @@ section {
 
 
 
+.content {
+    flex-grow: 1;
+    /* Ensures footer stays at the bottom */
+    padding: 20px;
+}
+
 footer {
     text-align: center;
-
-    padding: 1rem 0;
-    margin-top: 2rem;
 }
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -139,7 +145,6 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Optional: Adds a shadow for better aesthetics */
 }
-
 
 
 
