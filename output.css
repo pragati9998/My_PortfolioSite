@@ -438,3 +438,77 @@ footer {
     font-size: 1.2rem;
     text-decoration: none;
 }
+
+
+#education {
+    padding: 2rem auto;
+    background-color: #050404;
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.education-item {
+    background: #242424;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.education-item .fa-graduation-cap {
+    color: #007bff;
+    margin-right: 0.5rem;
+}
+
+.education-item p {
+    color: #dedede;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.education-item .institution {
+    font-weight: bold;
+    color: #bcbcbc;
+}
+
+
+/* The Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    /* Initially hidden */
+}
+
+#backToTop:hover {
+    background-color: #45a049;
+    /* Darker shade on hover */
+}

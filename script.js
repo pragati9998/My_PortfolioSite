@@ -8,3 +8,22 @@ toggleBtn.addEventListener('click', () => {
     // Change the button icon based on the current mode
     toggleBtn.textContent = body.classList.contains('dark-mode') ? '🌞' : '🌙';
 });
+
+
+
+ // JavaScript for scroll functionality
+        var backToTopButton = document.getElementById("backToTop");
+
+        // Show the button when the user scrolls down 100px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Function to scroll back to the top smoothly
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
