@@ -190,7 +190,7 @@ footer {
 
 /* Skills Section */
 #skills {
-    padding: 4rem;
+    padding: 1rem;
     background-color: #060606;
 
     text-align: center;
@@ -337,38 +337,90 @@ footer {
     }
 }
 
+
 /* Contact Section */
 #contact {
-    padding: 4rem;
-    background-color: #0a0a0a;
-    max-width: 900px;
-    margin: 2rem auto;
+    background-color: #090909;
+    padding: 4em;
     text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #fefefe;
+    margin-bottom: 1rem;
+}
+
+/* Form Container */
+#contact-form {
+    background: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Arial, sans-serif;
 }
 
-.contact-form {
-    display: grid;
-    gap: 1.5rem;
+/* Labels */
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
-.form-group input,
-.form-group textarea {
+/* Input Fields */
+#contact-form input,
+#contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.submit-btn {
-    background-color: #3b82f6;
-    color: white;
-    padding: 10px 20px;
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button */
+#contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.submit-btn:hover {
-    background-color: #2563eb;
+#contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Form Status Message */
+#form-status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact-form {
+        padding: 1.5rem;
+    }
 }
 
 #education {

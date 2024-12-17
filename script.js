@@ -27,3 +27,30 @@ toggleBtn.addEventListener('click', () => {
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+
+(function () {
+            // Initialize EmailJS with your Public Key
+            emailjs.init("TZoj-pabIy4yeOcQ7");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form's default behavior
+
+            // Form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send email using EmailJS
+            emailjs.send('service_anf7chi', 'template_d4ug05s', formData)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('form-status').innerText = "Message sent successfully!";
+                }, function (error) {
+                    console.error('FAILED...', error);
+                    document.getElementById('form-status').innerText = "Failed to send message. Please try again.";
+                });
+        });
